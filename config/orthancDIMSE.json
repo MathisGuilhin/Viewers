@@ -12,15 +12,15 @@
       "peers": [
         {
           "host": "localhost",
-          "port": 4242,
-          "aeTitle": "ORTHANC",
+          "port": 5678,
+          "aeTitle": "CONQUESTSRV1",
           "default": true,
           "server": false
         },
         {
-          "host": "0.0.0.0",
-          "port": 11112,
-          "aeTitle": "ORTHANC",
+          "host": "127.0.0.1",
+          "port": 3000,
+          "aeTitle": "OHIFDCM",
           "default": true,
           "server": true
         }
