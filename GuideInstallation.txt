@@ -1,0 +1,103 @@
+Il faut tout d'abord fork les deux repertoires (Viewers et Conquest-DICOM-Serveur)
+puis cloner la version 1 du viewer (branch v1.x) et la branche master du conquest.
+
+I/
+
+Au niveau serveur, il suffit de référencer le viewer dans les connexions (et soi même) : 
+
+CONQUESTSRV1		127.0.0.1	5678		un
+
+V*	        	*               1234            un
+W*	        	*               666             un
+S*		        *               5678            un
+
+OHIFDCM			127.0.0.1	5679		un
+
+Erreurs possibles : 
+
+1)Impossible de trouver la base de données.
+Deux solutions : Restore original configuration, ou remontrer le chemin d'acces aux images DICOM.
+Ne pas oublier apres de (Re)-initialize databse pour mettre à jour les données.
+Pour tester les serveurs, en créer 2 (2 dossier différents, copiés AVANT configuration), et tester le handshake.
+Les messages d'erreurs apparaissent dans Server status.
+
+2)Port non accessible : utiliser un port accessible, vérification sur requete DICOM.
+
+
+
+
+II/
+
+Au niveau de l'installation de OHIF Standalone (version 1) : 
+
+Suivre ces indications jusqu'au 6. (inclus) : https://gitlab.tribehealthsolutions.com/gqadonis/Viewers/blob/5eb5ee1aa8168f1b685ce1ef53b9cab64bcb7e7d/docs/OHIF-Viewer/Installation-Instructions/Windows/Windows-Server-2016/Standalone-Installation-Instructions.m
+
+Puis enchaîner avec https://docs.ohif.org/history/v1/deployment/building-for-production.html.
+
+Dans le dossier viewer : 
+npm install --production
+
+Ouvrir un powershell administrateur : 
+Start-Process powershell -Verb runAs
+
+Et rentrer : 
+cd OHIFViewerFolderLocation
+$settings = Get-Content ..\config\ohifDIMSE.json -Raw
+$settings = $settings -replace "`n","" -replace "`r","" -replace " ",""
+[Environment]::SetEnvironmentVariable("METEOR_SETTINGS", $settings, "Machine")
+SET METEOR_PACKAGE_DIRS="../Packages"
+meteor build --directory myOutputFolder
+
+avec OHIFViewerFolderLocation la localisation d'un dossier qui sera créé par la commande meteor build --directory.
+ohifDIMSE.json correspond au fichier repertoriant les adresses et aeTitle des entités qui communiquent via DIMSE
+Exemple pour un échange entre un serveur CONQUESTSRV1 en 5678 et OHIFDCM en 5679 : 
+
+...
+"name": "CONQUESTSRV1",
+      "wadoUriRoot": "http://localhost:5679/",
+      "requestOptions": {
+        "logRequests": true,
+        "logResponses": false,
+        "logTiming": true
+      },
+      "peers": [
+        {
+          "host": "127.0.0.1",
+          "port": 5678,
+          "aeTitle": "CONQUESTSRV1",
+          "default": true,
+          "server": false
+        },
+        {
+		  "host": "127.0.0.1",
+          "port": 5679,
+          "aeTitle": "OHIFDCM",
+          "default": true,
+          "server": true
+        }
+      ]
+...
+
+Ensuite, dans le dossier OHIFViewerFolderLocation créé par la commande build, aller dans bundle/programs/server :
+npm install
+
+Erreurs possibles : 
+
+1)Python non installé : executer en shell : npm install --global --production windows-build-tools@4.0.0
+La version 4 est nécéssaire car l'installation de celle d'avant reste bloquée à la fin (buguée)
+
+2)Cannot build using MSBuild: error MSB4019
+La c'est assez tricky : Il faut aller dans C:/Programmes(x86)/MSBuild
+Pour chaque dossier, aller dans Propriétés -> Sécurité -> Avancé et modifier le propriétaire de système à Utilisateurs (utiliser le bouton "vérifier nom"), et activer la cascade pour tous les fichiers et sous dossiers.
+
+Le npm install devrait alors fonctionner.
+
+Ensuite, il faut rertourner dans le bundle (OHIFViewerFolderLocation/bundle) MAIS pas dans le powershell car il ne connait pas les variables d'environnement. -> Shell administrateur 
+
+Rentrer une par une :
+SET MONGO_URL=mongodb://localhost:27017/myapp
+SET ROOT_URL=http://localhost
+SET PORT=5679
+
+On peut ensuite lancer le viewer : 
+node main.js 
