@@ -1,0 +1,42 @@
+{
+  "servers": {
+    "dimse": [{
+      "name": "CONQUESTSRV1",
+      "wadoUriRoot": "http://localhost:5679/",
+      "requestOptions": {
+        "logRequests": true,
+        "logResponses": false,
+        "logTiming": true
+      },
+      "peers": [
+        {
+          "host": "127.0.0.1",
+          "port": 5678,
+          "aeTitle": "CONQUESTSRV1",
+          "default": true,
+          "server": false
+        },
+        {
+		  "host": "127.0.0.1",
+          "port": 5679,
+          "aeTitle": "OHIFDCM",
+          "default": true,
+          "server": true
+        }
+      ]
+    }]
+  },
+  "defaultServiceType": "dimse",
+  "dropCollections": true,
+  "public": {
+    "verifyEmail": false,
+    "ui": {
+        "studyListFunctionsEnabled": true,
+        "leftSidebarOpen": false,
+        "displaySetNavigationLoopOverSeries": false,
+        "displaySetNavigationMultipleViewports": true,
+        "autoPositionMeasurementsTextCallOuts": "TRLB",
+        "studyListDateFilterNumDays": 1
+    }
+  }
+}

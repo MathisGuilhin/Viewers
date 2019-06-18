@@ -1,0 +1,11 @@
+$settings = Get-Content ..\config\conquestDIMSE.json -Raw
+$settings = $settings -replace "`n","" -replace "`r","" -replace " ",""
+[Environment]::SetEnvironmentVariable("METEOR_SETTINGS", $settings, "Machine")
+SET METEOR_PACKAGE_DIRS="../Packages"
+meteor build --directory ../Output
+
+SET MONGO_URL=mongodb://localhost:27017/myapp
+SET ROOT_URL=http://localhost
+SET PORT=5679
+node main.js
+

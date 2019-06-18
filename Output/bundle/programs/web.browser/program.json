@@ -1,0 +1,821 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "d14f89389b5b56ea2e919d177975afb769f11654.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/d14f89389b5b56ea2e919d177975afb769f11654.js?meteor_js_resource=true",
+      "size": 4253169,
+      "hash": "d14f89389b5b56ea2e919d177975afb769f11654"
+    },
+    {
+      "path": "d14f89389b5b56ea2e919d177975afb769f11654.stats.json",
+      "where": "client",
+      "type": "json",
+      "cacheable": true,
+      "url": "/d14f89389b5b56ea2e919d177975afb769f11654.stats.json?meteor_js_resource=true",
+      "size": 78984,
+      "hash": "4389b560eddf403fae31c67b8d8f417203ce5a5e"
+    },
+    {
+      "path": "b3d8313ad8f8a4b494b7b3879898dca0c6a33bc7.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/b3d8313ad8f8a4b494b7b3879898dca0c6a33bc7.css?meteor_css_resource=true",
+      "size": 473776,
+      "hash": "b3d8313ad8f8a4b494b7b3879898dca0c6a33bc7"
+    },
+    {
+      "path": "packages/ohif_polyfill/public/js/svgxuse.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_polyfill/public/js/svgxuse.min.js",
+      "size": 2939,
+      "hash": "119eb08ce645a510643042e8a720649f3b03ec6d"
+    },
+    {
+      "path": "packages/ohif_design/bootstrap/fonts/glyphicons-halflings-regular.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_design/bootstrap/fonts/glyphicons-halflings-regular.eot",
+      "size": 20127,
+      "hash": "30407a683746065f032a7a61ff50f24b008cc8b3"
+    },
+    {
+      "path": "packages/ohif_design/bootstrap/fonts/glyphicons-halflings-regular.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_design/bootstrap/fonts/glyphicons-halflings-regular.svg",
+      "size": 109025,
+      "hash": "c5a029a138d8ea5237d92ddd80e8e21b4c42aea8"
+    },
+    {
+      "path": "packages/ohif_design/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_design/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+      "size": 45404,
+      "hash": "3a900bcba1505bbef235f1b497513a1bd894f434"
+    },
+    {
+      "path": "packages/ohif_design/bootstrap/fonts/glyphicons-halflings-regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_design/bootstrap/fonts/glyphicons-halflings-regular.woff",
+      "size": 23424,
+      "hash": "434169edd7cbbb36bb43e25d78c7ceb26beac9b4"
+    },
+    {
+      "path": "packages/ohif_design/bootstrap/fonts/glyphicons-halflings-regular.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_design/bootstrap/fonts/glyphicons-halflings-regular.woff2",
+      "size": 18028,
+      "hash": "b3253b854b958bb4f2e4c2dae5ff45c8237dc1d6"
+    },
+    {
+      "path": "packages/ohif_design/assets/theme-icons.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_design/assets/theme-icons.png",
+      "size": 39672,
+      "hash": "bf566a1d26fd13aa015099cd4adb39a5faf6e2dd"
+    },
+    {
+      "path": "packages/ohif_cornerstone/public/js/cornerstoneWADOImageLoaderCodecs.es5.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_cornerstone/public/js/cornerstoneWADOImageLoaderCodecs.es5.js",
+      "size": 1537582,
+      "hash": "09018a59a12226a257b5afadc19cc9ded0ae9d1f"
+    },
+    {
+      "path": "packages/ohif_cornerstone/public/js/cornerstoneWADOImageLoaderWebWorker.es5.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_cornerstone/public/js/cornerstoneWADOImageLoaderWebWorker.es5.js",
+      "size": 13601,
+      "hash": "0b82d39de020067dba9fc059c618a60a92eff423"
+    },
+    {
+      "path": "packages/ohif_cornerstone/public/js/cornerstoneWADOImageLoaderWebWorker.min.js.map",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_cornerstone/public/js/cornerstoneWADOImageLoaderWebWorker.min.js.map",
+      "size": 51830,
+      "hash": "d60d3c46978d6626ad426ab0c621d528b0c391fd"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/icons.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/icons.svg",
+      "size": 27691,
+      "hash": "a2d1cd084cd94879db1a3c82329186ad3dc65855"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/user-menu-icons.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/user-menu-icons.svg",
+      "size": 2948,
+      "hash": "6c4bdca2c417bfecbffcad4a6b0bf284ae77e3b9"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Black-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Black-latin-ext.woff",
+      "size": 19868,
+      "hash": "c27fea163d42e4ca1cf0cacfba4e9aff116f370d"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Black-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Black-latin-ext.woff2",
+      "size": 14644,
+      "hash": "632d5567f4eeeaada406ee5da14a586828bb157e"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Black-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Black-latin.woff",
+      "size": 20880,
+      "hash": "c631c47077b5b69b906b6a0a074ea3286c0c00c6"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Black-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Black-latin.woff2",
+      "size": 15464,
+      "hash": "f9eba55eca81a87b4382d47c7da33c689a398aee"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-BlackItalic-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-BlackItalic-latin-ext.woff",
+      "size": 21056,
+      "hash": "5e3a184707e7d8e7c5f623b725e15f0869566a2e"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-BlackItalic-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-BlackItalic-latin-ext.woff2",
+      "size": 15736,
+      "hash": "ab5586bbc7c7230ffdac80c5cb449d8afac292bd"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-BlackItalic-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-BlackItalic-latin.woff",
+      "size": 22680,
+      "hash": "f135a4b97f4ca88f9026181e882993f1b465e206"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-BlackItalic-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-BlackItalic-latin.woff2",
+      "size": 17084,
+      "hash": "67569a4e8e1f5e333c6de9cb954d89ba614eed6e"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Bold-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Bold-latin-ext.woff",
+      "size": 19688,
+      "hash": "abc69c4784e83a57167ab98a0bbfe7c15bd5b98b"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Bold-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Bold-latin-ext.woff2",
+      "size": 14512,
+      "hash": "f4ec5c0429b19295a4745fc16ef7b3c93d1aca01"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Bold-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Bold-latin.woff",
+      "size": 20748,
+      "hash": "c94d07e06d2a1126d4ff588306b8f16d79dc8c9d"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Bold-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Bold-latin.woff2",
+      "size": 15352,
+      "hash": "0975fe756bd9a190537f5b7a9a81221e814aeb84"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-BoldItalic-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-BoldItalic-latin-ext.woff",
+      "size": 20552,
+      "hash": "bab18fa952a100a18c59678e02422e9bb976ff17"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-BoldItalic-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-BoldItalic-latin-ext.woff2",
+      "size": 15272,
+      "hash": "51e5dd6d3bc7a0fb281857b49b22c8743afaab1b"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-BoldItalic-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-BoldItalic-latin.woff",
+      "size": 21908,
+      "hash": "f5d644829c39de85c28ca1f91ad003eb6335dc36"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-BoldItalic-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-BoldItalic-latin.woff2",
+      "size": 16452,
+      "hash": "add8dfc04ef73cb13f447c02143a310fd0b41c16"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Italic-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Italic-latin-ext.woff",
+      "size": 20612,
+      "hash": "aab6f2c6fa4cade2e2c7647474a7603164f5a31a"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Italic-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Italic-latin-ext.woff2",
+      "size": 15316,
+      "hash": "b87d40f96c595209752f0805ff0e428f7d4c5b4f"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Italic-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Italic-latin.woff",
+      "size": 22292,
+      "hash": "f1b9b8f0170ea02c1a8c2011234a39d7a3091087"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Italic-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Italic-latin.woff2",
+      "size": 16708,
+      "hash": "d57b79f8cbdad922877f188c66889cde83c7c64e"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Light-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Light-latin-ext.woff",
+      "size": 19956,
+      "hash": "839e99b9a7f8f34aa3498501a13a564f192dfe6e"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Light-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Light-latin-ext.woff2",
+      "size": 14740,
+      "hash": "bf3770ccd063ab9b76c6e9c76e9705611eae58cd"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Light-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Light-latin.woff",
+      "size": 20892,
+      "hash": "c62a743b4e1a3550fcc91764833382b54d33690c"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Light-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Light-latin.woff2",
+      "size": 15416,
+      "hash": "e9408c16b231c0b61001a7da8092fe936cb19c7b"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-LightItalic-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-LightItalic-latin-ext.woff",
+      "size": 20688,
+      "hash": "cc17f5719be1ac440910aa551b855acb7eb7f747"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-LightItalic-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-LightItalic-latin-ext.woff2",
+      "size": 15460,
+      "hash": "603fcf7e61adfc7d9d8414026e02a8290ad4a51c"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-LightItalic-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-LightItalic-latin.woff",
+      "size": 22684,
+      "hash": "c94c86b760d3fe79c711040f348677302252be3d"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-LightItalic-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-LightItalic-latin.woff2",
+      "size": 17112,
+      "hash": "a0cc16f6b04d6fc6c516daccbb2b3b0179d73777"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Medium-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Medium-latin-ext.woff",
+      "size": 19816,
+      "hash": "1197a1801a626b887728b69b9a3c9daa8e2fb659"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Medium-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Medium-latin-ext.woff2",
+      "size": 14608,
+      "hash": "1559e0358876b199ac799ba859170e4189cb1b35"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Medium-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Medium-latin.woff",
+      "size": 20984,
+      "hash": "c6130f6be42584f68bf8eefc5928bad192071f53"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Medium-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Medium-latin.woff2",
+      "size": 15596,
+      "hash": "03733521fc42a670581611e247f0ceb580af0de1"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-MediumItalic-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-MediumItalic-latin-ext.woff",
+      "size": 21100,
+      "hash": "03304a1a90a083c5551b16c6a2f4c4729accd0d3"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-MediumItalic-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-MediumItalic-latin-ext.woff2",
+      "size": 15776,
+      "hash": "fc883513e5ecbf9837334f09a7dad89288a1b26b"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-MediumItalic-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-MediumItalic-latin.woff",
+      "size": 22508,
+      "hash": "a3c3f4de9795ae81280780ec137eb686692b073f"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-MediumItalic-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-MediumItalic-latin.woff2",
+      "size": 16984,
+      "hash": "1e19bcfebee2e07738cb6d26ecb7a19dabbf8737"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Regular-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Regular-latin-ext.woff",
+      "size": 19932,
+      "hash": "887185545f997a3a9c8c79a46469bb2a2540f3be"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Regular-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Regular-latin-ext.woff2",
+      "size": 14644,
+      "hash": "fa7ea80d61b2d1001afa543ba33905432fd2e905"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Regular-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Regular-latin.woff",
+      "size": 20712,
+      "hash": "78dd1525649b5294d82e5afcdf86e7c4dcef7035"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Regular-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Regular-latin.woff2",
+      "size": 15264,
+      "hash": "4704c69dc2b42460e85698b0b5717c8909175816"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Thin-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Thin-latin-ext.woff",
+      "size": 19824,
+      "hash": "65bc671c166c79ceac60defbb6cdcf6949783929"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Thin-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Thin-latin-ext.woff2",
+      "size": 14640,
+      "hash": "2b3cd1b8ed22045af5ec3cf082818c3a18ac4fd5"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Thin-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Thin-latin.woff",
+      "size": 21000,
+      "hash": "9b101b750b6956059f082c8c1943c6ae89af2cf3"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-Thin-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-Thin-latin.woff2",
+      "size": 15584,
+      "hash": "533775833f47911e6c85fa79b5fe7295199e509b"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-ThinItalic-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-ThinItalic-latin-ext.woff",
+      "size": 20928,
+      "hash": "02d97320ce7c5e5d5507e4dc44f9df3b62a7b86b"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-ThinItalic-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-ThinItalic-latin-ext.woff2",
+      "size": 15428,
+      "hash": "fd6834ae8046166616a9d19b385b1ff0d56334f4"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-ThinItalic-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-ThinItalic-latin.woff",
+      "size": 22304,
+      "hash": "6e72ed2d467b05b81cec1a6e3fdcdbbf41148b6a"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Roboto-ThinItalic-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Roboto-ThinItalic-latin.woff2",
+      "size": 16708,
+      "hash": "130894df678d4a9eaad23e0efc921da5305da6e2"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Sanchez-Regular-latin-ext.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Sanchez-Regular-latin-ext.woff",
+      "size": 10976,
+      "hash": "31ade65bd7e4b7a45a6d216a352fec0d41275790"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Sanchez-Regular-latin-ext.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Sanchez-Regular-latin-ext.woff2",
+      "size": 7924,
+      "hash": "62fe994f75da5f65a69657cb9bc23d3a6689bb7f"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Sanchez-Regular-latin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Sanchez-Regular-latin.woff",
+      "size": 17808,
+      "hash": "24df6c86243aabcc27b716790febcacfdf27718f"
+    },
+    {
+      "path": "packages/ohif_viewerbase/assets/fonts/Sanchez-Regular-latin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_viewerbase/assets/fonts/Sanchez-Regular-latin.woff2",
+      "size": 12836,
+      "hash": "4b2959a170e765d73400509734e132375e018be7"
+    },
+    {
+      "path": "packages/ohif_hanging-protocols/assets/dots.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_hanging-protocols/assets/dots.svg",
+      "size": 3527,
+      "hash": "d9448e0ab4a04a72a909c9a49d8e7e9c7f22e43f"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/gcp.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/gcp.min.js",
+      "size": 8169,
+      "hash": "1d42285afac5390d3b75abb7dc2bbc79bf66227b"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/gcp.0.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/gcp.0.min.js",
+      "size": 358879,
+      "hash": "91db24bf9afc5cb79cbb99745611fa773635fa58"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/gcp.2.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/gcp.2.min.js",
+      "size": 25384,
+      "hash": "b6cf46c0c182a119b87ff21d747b8a6645af1abb"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/gcp.3.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/gcp.3.min.js",
+      "size": 14806,
+      "hash": "61c888971bb4733a104a397266f89dbe4cd3a1ea"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/gcp.4.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/gcp.4.min.js",
+      "size": 11897,
+      "hash": "0c5cd2e0564cf04653b0eea5015dd1d1eab103e0"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/vue.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/vue.js",
+      "size": 66856,
+      "hash": "03a03f41fd26ad487ff1ea9ef1d7c9938959585c"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/Button_File.473e74a7.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/Button_File.473e74a7.svg",
+      "size": 4020,
+      "hash": "aa6660dd5e7392133e8b45a368f50782bd246b0a"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/Button_Folder.271da60b.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/Button_Folder.271da60b.svg",
+      "size": 4128,
+      "hash": "7370e9cf589250daf38b1a459cc06b65dc594130"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/Icon-24px-Close.d1a4d6d2.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/Icon-24px-Close.d1a4d6d2.svg",
+      "size": 722,
+      "hash": "8c8a52a75655e68c8c46cb2100506dcf4b0661e6"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/Icon-Arrow.e493b444.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/Icon-Arrow.e493b444.svg",
+      "size": 536,
+      "hash": "daef32da1a080647803425166517d65dc825848e"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/Icon-Warn.f3b4b640.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/Icon-Warn.f3b4b640.svg",
+      "size": 1200,
+      "hash": "1ba589bd6ff175e08eba07f8cd2daeca122c0c5b"
+    },
+    {
+      "path": "packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/arrow_right.d8a5b209.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_google-cloud/.npm/package/node_modules/healthcare-api-adapter/dist/img/arrow_right.d8a5b209.svg",
+      "size": 173,
+      "hash": "dfd37b577a76082238d02e93e18d9d3aaaaf9e18"
+    },
+    {
+      "path": "packages/ohif_user-oidc/public/js/oidc-client.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_user-oidc/public/js/oidc-client.min.js",
+      "size": 246169,
+      "hash": "6460fd0abd8cf2cafe5c84060237b0f0aae3a8b4"
+    },
+    {
+      "path": "packages/ohif_user-oidc/public/js/silentRefresh.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_user-oidc/public/js/silentRefresh.js",
+      "size": 64,
+      "hash": "f285c790ffbacd7d921606bb5f7a7b62bda40cfa"
+    },
+    {
+      "path": "packages/ohif_user-oidc/public/silent-refresh.html",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ohif_user-oidc/public/silent-refresh.html",
+      "size": 313,
+      "hash": "be3909904efef9ab8cb836fa7c88b2d63a6cc070"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "size": 165742,
+      "hash": "5e3a1a9b72af1d842682f7e0a5c305922c583e3f"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "size": 444379,
+      "hash": "2958ef6f1890fda3f47468dedc70c2e1b2dd9511"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "size": 165548,
+      "hash": "dbaed61bd8235d7e12522b21ce66fb90a4f9740d"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "size": 98024,
+      "hash": "951644ff8c02065fd58f609d142e45daaaa5370f"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "size": 77160,
+      "hash": "a34ffd10b2a49d55d6247e351520ffdf556e0bb1"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "size": 134808,
+      "hash": "cd12480a6626f5faf89ddd7ebb00edf64059498d"
+    },
+    {
+      "path": "app/images/logo.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/logo.png",
+      "size": 15344,
+      "hash": "dc98ce5cee3f39a6eb7f47ebbea270c8d9d0718d"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "1f1d05cf5a7e2f7381b936b251a2d3ca84bf884e"
+    }
+  ]
+}
