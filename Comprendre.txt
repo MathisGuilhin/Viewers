@@ -1,0 +1,5 @@
+Segmentation d'image dans OHIF Viewer : 
+
+-Surement à déclarer dans setupTools
+-Ca se trouve dans util : getDefaultToolbarButtons
+On peut activer/désactiver/ajouter
