@@ -9,9 +9,7 @@ export default function initWebWorkers(
   baseDirectory = '/',
   webWorkScriptsPath = ''
 ) {
-  let scriptsPath = `${window.location.protocol}//${
-    window.location.host
-  }${baseDirectory}${webWorkScriptsPath}`;
+  let scriptsPath = `${window.location.protocol}//${window.location.host}${baseDirectory}${webWorkScriptsPath}`;
 
   // Ensure the last character is a slash
   if (scriptsPath[scriptsPath.length - 1] !== '/') {
