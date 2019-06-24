@@ -35,6 +35,13 @@ export default function() {
       icon: 'measure-temp',
       active: false,
     },
+    {
+      command: 'Zoom',
+      type: 'tool',
+      text: 'Segmentation',
+      icon: 'liver',
+      active: false,
+    },
     /*{
         command: 'Annotate',
         type: 'tool',
