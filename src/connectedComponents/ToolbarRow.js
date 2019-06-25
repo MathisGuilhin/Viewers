@@ -35,7 +35,7 @@ class ToolbarRow extends Component {
 
     // Normal ToolbarButtons...
     // Just how high do we need to hoist this state?
-    // Why ToolbarRow instead of just Toolbar? Do we have any others?
+    // Why ToolbarRow instead of just Toolbar? Do we have any oth ers?
     this.state = {
       toolbarButtons: toolbarButtonDefinitions,
       activeButtons: [],
@@ -181,6 +181,7 @@ function _getVisibleToolbarButtons() {
 
       if (this.props.activeContexts.includes(context)) {
         toolbarButtonDefinitions.push(definition);
+        //console.log(definition);
       }
     });
   });
