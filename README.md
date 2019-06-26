@@ -56,3 +56,4 @@ yarn run dev
 ## Sécurisation par authentification 
 
 La [doc OHIF](https://docs.ohif.org/deployment/recipes/user-account-control.html) est complète à ce sujet.
+Complément : il faut re-build à chaque modification pour update la version avec docker. Il est donc mieux de travailler sur la version "normale" et de build à la fin.
