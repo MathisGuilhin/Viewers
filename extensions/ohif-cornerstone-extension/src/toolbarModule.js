@@ -81,6 +81,15 @@ const definitions = [
     commandOptions: { toolName: 'Angle' },
   },
   {
+    id: 'Segmentation',
+    label: 'Segmentation',
+    icon: 'liver',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'FreehandMouse' },
+  },
+  {
     id: 'Reset',
     label: 'Reset',
     icon: 'reset',

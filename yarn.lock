@@ -1498,10 +1498,19 @@
     react-vtkjs-viewport "0.0.9"
     vtk.js "^8.9.1"
 
-"@ohif/i18n@0.0.4", "@ohif/i18n@^0.0.4":
+"@ohif/i18n@0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@ohif/i18n/-/i18n-0.0.4.tgz#e54176e7799e311dbaff37995f9d2745b58cbd0f"
   integrity sha512-lW+S9weZbJS300yCRR8Ygb1KTULbD1Qx5ZGcYUXyseJIWr5jeJ4V/6FdS30w8u8ejiIVwF8rYOguHsmueQrkdw==
+  dependencies:
+    "@babel/runtime" "^7.2.0"
+    classnames "^2.2.6"
+    rollup-plugin-json "^4.0.0"
+
+"@ohif/i18n@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@ohif/i18n/-/i18n-0.1.0.tgz#71c43530822d6a43213adccf9109354407ee0d96"
+  integrity sha512-0LIbqlWtDc+FLI9Fkb5ZvMhbxY3oMuCBa0CXJ8+CAY+j4/GK4hFu5b4INjJjlLmJ9FNOj3YIJKHsjWF4RH0tOw==
   dependencies:
     "@babel/runtime" "^7.2.0"
     classnames "^2.2.6"
@@ -12532,6 +12541,13 @@ react-cornerstone-viewport@0.1.30:
     moment "^2.23.0"
     stylus "^0.54.5"
 
+"react-cornerstone-viewport@file:.yalc/react-cornerstone-viewport":
+  version "0.1.29-bcbcb5a3"
+  dependencies:
+    lodash.debounce "^4.0.8"
+    moment "^2.23.0"
+    stylus "^0.54.5"
+
 react-dates@18.4.1:
   version "18.4.1"
   resolved "https://registry.yarnpkg.com/react-dates/-/react-dates-18.4.1.tgz#82aa0bb4faaa9cdb9547d61c791af2180beda20e"
@@ -12795,13 +12811,11 @@ react-transition-group@^2.0.0, react-transition-group@^2.2.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-viewerbase@0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/react-viewerbase/-/react-viewerbase-0.10.0.tgz#4ac07649325759f8a58fc3be50dea4d1db8f13f8"
-  integrity sha512-pUt+HUGoEkDnVhxcg+gsoRzegEPVpsMPH8cnJINRoaATqbxc0jbt1N+3fTNTbPMMKZYMxC99L5bQ6OQ1QF+3qw==
+"react-viewerbase@file:.yalc/react-viewerbase":
+  version "0.2.17-f8380bd1"
   dependencies:
     "@babel/runtime" "7.2.0"
-    "@ohif/i18n" "^0.0.4"
+    "@ohif/i18n" "^0.1.0"
     classnames "2.2.6"
     i18next "^17.0.3"
     i18next-browser-languagedetector "^3.0.1"
