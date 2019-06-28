@@ -27,6 +27,7 @@ function getAllTools() {
 }
 
 function getMeasurementText(measurementData) {
+  //console.log("data de getMeasurementText : ", measurementData);
   const { location, description } = measurementData;
   let text = '...';
   if (location) {
@@ -146,6 +147,7 @@ function convertTimepointsToTableData(timepoints) {
 const mapStateToProps = state => {
   const { timepoints, measurements } = state.timepointManager;
   return {
+    freehandData: measurements.FreehandMouse,
     timepoints: convertTimepointsToTableData(timepoints),
     measurementCollection: convertMeasurementsToTableData(
       measurements,
@@ -289,6 +291,7 @@ const mapDispatchToProps = dispatch => {
 
 const mergeProps = (propsFromState, propsFromDispatch, ownProps) => {
   return {
+    freehandData: propsFromState.freehandData,
     timepoints: propsFromState.timepoints,
     measurementCollection: propsFromState.measurementCollection,
     selectedMeasurementNumber: ownProps.selectedMeasurementNumber,
