@@ -91,7 +91,7 @@
     "i18next-browser-languagedetector": "^3.0.1",
     "lodash.isequal": "4.5.0",
     "moment": "^2.24.0",
-    "ohif-core": "0.6.0",
+    "ohif-core": "file:.yalc/ohif-core",
     "oidc-client": "1.7.x",
     "prop-types": "^15.7.2",
     "react-cornerstone-viewport": "file:.yalc/react-cornerstone-viewport",
