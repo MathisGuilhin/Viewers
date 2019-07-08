@@ -2631,7 +2631,7 @@ babel-code-frame@^6.22.0:
     esutils "^2.0.2"
     js-tokens "^3.0.2"
 
-babel-eslint@10.0.1, babel-eslint@^10.0.1:
+babel-eslint@10.0.1:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.0.1.tgz#919681dc099614cd7d31d45c8908695092a1faed"
   integrity sha512-z7OT1iNV+TjOwHNLLyJk+HN+YVWX+CLE6fPD2SymJZOZQBs+QIexFjhm4keGTm8MW9xr4EC9Q0PbaLB24V5GoQ==
@@ -4097,7 +4097,7 @@ cornerstone-math@^0.1.8:
   integrity sha512-x7NEQHBtVG7j1yeyj/aRoKTpXv1Vh2/H9zNLMyqYJDtJkNng8C4Q8M3CgZ1qer0Yr7eVq2x+Ynmj6kfOm5jXKw==
 
 "cornerstone-tools@file:.yalc/cornerstone-tools":
-  version "3.0.1-81f25d0a"
+  version "3.0.1-cb816f28"
   dependencies:
     "@babel/runtime" "7.1.2"
     cornerstone-math "0.1.7"
@@ -10635,10 +10635,8 @@ octokit-pagination-methods@^1.1.0:
   resolved "https://registry.yarnpkg.com/octokit-pagination-methods/-/octokit-pagination-methods-1.1.0.tgz#cf472edc9d551055f9ef73f6e42b4dbb4c80bea4"
   integrity sha512-fZ4qZdQ2nxJvtcasX7Ghl+WlWS/d9IgnBIwFZXVNNZUmzpno91SX5bc5vuxiuKoCtK78XxGGNuSCrDC7xYB3OQ==
 
-ohif-core@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/ohif-core/-/ohif-core-0.6.0.tgz#9fea32d8d10da84b9030d2e4f76b30e431e14ac2"
-  integrity sha512-2Z/HTRZ21i7w056MifH1k0y4brhrZSUsmeqbMcPLSh1cztRGnLQBamBZ08SzWvktcNxLDuwJI9zNDkJ8Gw4Idw==
+"ohif-core@file:.yalc/ohif-core":
+  version "0.4.0-b08c8a48"
   dependencies:
     "@babel/runtime" "^7.2.0"
     ajv "^6.10.0"
@@ -12808,7 +12806,7 @@ react-transition-group@^2.0.0, react-transition-group@^2.2.0:
     react-lifecycles-compat "^3.0.4"
 
 "react-viewerbase@file:.yalc/react-viewerbase":
-  version "0.2.17-2359980"
+  version "0.2.17-7008400"
   dependencies:
     "@babel/runtime" "7.2.0"
     "@ohif/i18n" "^0.1.0"

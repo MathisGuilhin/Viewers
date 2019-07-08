@@ -27,7 +27,6 @@ function getAllTools() {
 }
 
 function getMeasurementText(measurementData) {
-  //console.log("data de getMeasurementText : ", measurementData);
   const { location, description } = measurementData;
   let text = '...';
   if (location) {

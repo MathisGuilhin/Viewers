@@ -1,0 +1,11 @@
+Tout d'abord, il faut creer une nouvelle mesure : 
+const measurementData = this.createNewMeasurement(eventData)
+
+Méthode fondamentale de dessin dans drawing
+
+
+184 95
+339 95
+339 288
+184 288
+
