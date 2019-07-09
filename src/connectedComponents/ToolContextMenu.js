@@ -34,11 +34,6 @@ let defaultDropdownItems = [
     action: ({ nearbyToolData, eventData }) => {
       const element = eventData.element;
       nearbyToolData.tool.handles.interpolate = true;
-      cornerstoneTools.modifyToolState(
-        element,
-        nearbyToolData.toolType,
-        nearbyToolData.tool
-      );
       cornerstone.updateImage(element);
     },
   },

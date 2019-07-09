@@ -29,7 +29,6 @@ function getToolLabellingFlowCallback(store) {
       if (response) {
         measurementData.response = response;
       }
-
       updateTableWithNewMeasurementData(measurementData);
     };
 
@@ -176,7 +175,7 @@ export default function setupTools(store) {
     { name: 'Brush', mouseButtonMasks: [1] },
     {
       name: 'FreehandMouse',
-      configuration: {
+      props: {
         configuration: {
           getMeasurementLocationCallback: toolLabellingFlowCallback,
         },
