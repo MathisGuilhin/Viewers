@@ -1454,17 +1454,17 @@
     url-template "^2.0.8"
 
 "@ohif/extension-cornerstone@file:.yalc/@ohif/extension-cornerstone":
-  version "0.0.37-425d1785"
+  version "0.0.37-711b5cbe"
   dependencies:
     "@babel/runtime" "^7.2.0"
     classnames "^2.2.6"
     lodash.throttle "^4.1.1"
     react-cornerstone-viewport "0.1.30"
 
-"@ohif/extension-dicom-html@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@ohif/extension-dicom-html/-/extension-dicom-html-0.0.3.tgz#1d085f603379599cf07801ec003e3d5050e2d659"
-  integrity sha512-S+Mg9OFHNvllDDza55y4/NmBV1bFJ+NLbpcnsw45QyfgT3KAg8v/8ht1QYM9IcBGqhxMTJs8OqBuJI9sAiTWlw==
+"@ohif/extension-dicom-html@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@ohif/extension-dicom-html/-/extension-dicom-html-0.0.4.tgz#f547b0778f127e873fee0dba0bfb2806da12bbb9"
+  integrity sha512-5HbDG/1Q0CHQRAPhgvmXTNfwoaGPkl8T5+pSvUvkTHWxLfnUVJltuHny4OKjYdprrYstfbB+Sj8TxA5gjyQYwA==
   dependencies:
     "@babel/runtime" "^7.2.0"
 
@@ -4097,7 +4097,7 @@ cornerstone-math@^0.1.8:
   integrity sha512-x7NEQHBtVG7j1yeyj/aRoKTpXv1Vh2/H9zNLMyqYJDtJkNng8C4Q8M3CgZ1qer0Yr7eVq2x+Ynmj6kfOm5jXKw==
 
 "cornerstone-tools@file:.yalc/cornerstone-tools":
-  version "3.0.1-681225b9"
+  version "3.0.1-7d442698"
   dependencies:
     "@babel/runtime" "7.1.2"
     cornerstone-math "0.1.7"
@@ -10641,7 +10641,7 @@ octokit-pagination-methods@^1.1.0:
   integrity sha512-fZ4qZdQ2nxJvtcasX7Ghl+WlWS/d9IgnBIwFZXVNNZUmzpno91SX5bc5vuxiuKoCtK78XxGGNuSCrDC7xYB3OQ==
 
 "ohif-core@file:.yalc/ohif-core":
-  version "0.4.0-8ab0106a"
+  version "0.4.0-22e35af6"
   dependencies:
     "@babel/runtime" "^7.2.0"
     ajv "^6.10.0"
@@ -12804,11 +12804,12 @@ react-transition-group@^2.0.0, react-transition-group@^2.2.0:
     react-lifecycles-compat "^3.0.4"
 
 "react-viewerbase@file:.yalc/react-viewerbase":
-  version "0.2.17-048d804c"
+  version "0.2.17-5a350b28"
   dependencies:
     "@babel/runtime" "7.2.0"
     "@ohif/i18n" "^0.1.0"
     classnames "2.2.6"
+    file-saver "^2.0.2"
     i18next "^17.0.3"
     i18next-browser-languagedetector "^3.0.1"
     lodash.isequal "4.5.0"

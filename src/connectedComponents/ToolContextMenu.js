@@ -33,7 +33,8 @@ let defaultDropdownItems = [
     actionType: 'Interpolate',
     action: ({ nearbyToolData, eventData }) => {
       const element = eventData.element;
-      nearbyToolData.tool.handles.interpolate = true;
+      nearbyToolData.tool.interpolate = true;
+      nearbyToolData.tool.selectedData = true;
       cornerstone.updateImage(element);
     },
   },
