@@ -1,4 +1,4 @@
-const items = [
+/*const items = [
   'Abdomen/Chest Wall',
   'Adrenal',
   'Bladder',
@@ -27,6 +27,14 @@ const items = [
   'Spleen',
   'Stomach',
   'Subcutaneous',
+];*/
+
+const items = [
+  'Tumor type 1',
+  'Tumor type 2',
+  'Tumor type 3',
+  'Tumor type 4',
+  'Tumor type 5',
 ];
 
 const OHIFLabellingData = items.map(item => {

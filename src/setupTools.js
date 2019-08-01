@@ -183,6 +183,15 @@ export default function setupTools(store) {
       mouseButtonMasks: [1],
     },
     {
+      name: 'Repulsor',
+      props: {
+        configuration: {
+          getMeasurementLocationCallback: toolLabellingFlowCallback,
+        },
+      },
+      mouseButtonMasks: [1],
+    },
+    {
       name: 'EllipticalRoi',
       props: {
         configuration: {

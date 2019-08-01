@@ -90,6 +90,15 @@ const definitions = [
     commandOptions: { toolName: 'FreehandMouse' },
   },
   {
+    id: 'Repulsor',
+    label: 'Repulsor',
+    icon: 'circle-o',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'Repulsor' },
+  },
+  {
     id: 'Reset',
     label: 'Reset',
     icon: 'reset',

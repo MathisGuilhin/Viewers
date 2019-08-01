@@ -7,7 +7,6 @@ export default function updateTableWithNewMeasurementData({
   location,
   description,
 }) {
-  console.log('toolType', toolType);
   // Update all measurements by measurement number
   const measurementApi = OHIF.measurements.MeasurementApi.Instance;
   const measurements = measurementApi.tools[toolType].filter(
