@@ -1454,7 +1454,7 @@
     url-template "^2.0.8"
 
 "@ohif/extension-cornerstone@file:.yalc/@ohif/extension-cornerstone":
-  version "0.0.37-711b5cbe"
+  version "0.0.37-8e5d3716"
   dependencies:
     "@babel/runtime" "^7.2.0"
     classnames "^2.2.6"
@@ -4097,7 +4097,7 @@ cornerstone-math@^0.1.8:
   integrity sha512-x7NEQHBtVG7j1yeyj/aRoKTpXv1Vh2/H9zNLMyqYJDtJkNng8C4Q8M3CgZ1qer0Yr7eVq2x+Ynmj6kfOm5jXKw==
 
 "cornerstone-tools@file:.yalc/cornerstone-tools":
-  version "3.0.1-7d442698"
+  version "3.0.1-bc9919e3"
   dependencies:
     "@babel/runtime" "7.1.2"
     cornerstone-math "0.1.7"
@@ -9979,6 +9979,13 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
+nifti-reader-js@^0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/nifti-reader-js/-/nifti-reader-js-0.5.4.tgz#a6835f625aba3fd0b91d2554d99545a00d0f2161"
+  integrity sha1-poNfYlq6P9C5HSVU2ZVFoA0PIWE=
+  dependencies:
+    pako "*"
+
 no-case@^2.2.0:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
@@ -10641,7 +10648,7 @@ octokit-pagination-methods@^1.1.0:
   integrity sha512-fZ4qZdQ2nxJvtcasX7Ghl+WlWS/d9IgnBIwFZXVNNZUmzpno91SX5bc5vuxiuKoCtK78XxGGNuSCrDC7xYB3OQ==
 
 "ohif-core@file:.yalc/ohif-core":
-  version "0.4.0-22e35af6"
+  version "0.4.0-57a03dd0"
   dependencies:
     "@babel/runtime" "^7.2.0"
     ajv "^6.10.0"
@@ -10952,15 +10959,15 @@ pacote@^8.1.6:
     unique-filename "^1.1.0"
     which "^1.3.0"
 
+pako@*, pako@~1.0.2, pako@~1.0.5:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.10.tgz#4328badb5086a426aa90f541977d4955da5c9732"
+  integrity sha512-0DTvPVU3ed8+HNXOu5Bs+o//Mbdj9VNQMUOe9oKCwh8l0GNwpTDMKCWbRjgtD291AWnkAgkqA/LOnQS8AmS1tw==
+
 pako@1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.6.tgz#0101211baa70c4bca4a0f63f2206e97b7dfaf258"
   integrity sha512-lQe48YPsMJAig+yngZ87Lus+NF+3mtu7DVOBu6b/gHO1YpKwIj5AWjZ/TOS7i46HD/UixzWb1zeWDZfGZ3iYcg==
-
-pako@~1.0.2, pako@~1.0.5:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.10.tgz#4328badb5086a426aa90f541977d4955da5c9732"
-  integrity sha512-0DTvPVU3ed8+HNXOu5Bs+o//Mbdj9VNQMUOe9oKCwh8l0GNwpTDMKCWbRjgtD291AWnkAgkqA/LOnQS8AmS1tw==
 
 parallel-transform@^1.1.0:
   version "1.1.0"
@@ -12804,7 +12811,7 @@ react-transition-group@^2.0.0, react-transition-group@^2.2.0:
     react-lifecycles-compat "^3.0.4"
 
 "react-viewerbase@file:.yalc/react-viewerbase":
-  version "0.2.17-5a350b28"
+  version "0.2.17-f6abf2a6"
   dependencies:
     "@babel/runtime" "7.2.0"
     "@ohif/i18n" "^0.1.0"

@@ -112,7 +112,6 @@ class StudyListWithData extends Component {
         this.setState({
           error: true,
         });
-
         throw new Error(error);
       });
   };
@@ -139,6 +138,13 @@ class StudyListWithData extends Component {
     return (
       <>
         <ConnectedHeader home={true} user={this.props.user} />
+        <button
+          onClick={() => {
+            this.props.history.push(`/viewer/NIFTI`);
+          }}
+        >
+          NIFTI Loader
+        </button>
         <StudyList
           studies={this.state.studies}
           studyListFunctionsEnabled={false}

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import IHEInvokeImageDisplay from './routes/IHEInvokeImageDisplay.js';
 import ViewerRouting from './routes/ViewerRouting.js';
 import StudyListRouting from './studylist/StudyListRouting.js';
+import ViewerNIFTI from './connectedComponents/ViewerNIFTI.js';
 import StandaloneRouting from './routes/StandaloneRouting.js';
 import CallbackPage from './CallbackPage.js';
 import { withRouter } from 'react-router';
@@ -86,6 +87,7 @@ class OHIFStandaloneViewer extends Component {
         <Route exact path="/studylist" component={StudyListRouting} />
         <Route exact path="/" component={StudyListRouting} />
         <Route exact path="/viewer" component={StandaloneRouting} />
+        <Route exact path="/viewer/NIFTI" component={ViewerNIFTI} />
         <Route path="/viewer/:studyInstanceUids" component={ViewerRouting} />
         <Route
           path="/study/:studyInstanceUid/series/:seriesInstanceUids"

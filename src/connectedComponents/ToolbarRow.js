@@ -88,7 +88,6 @@ class ToolbarRow extends Component {
     const rightSidebarValue = this.props.rightSidebarOpen
       ? rightSidebarToggle[0].value
       : null;
-
     const buttonComponents = _getButtonComponents.call(
       this,
       this.state.toolbarButtons,
@@ -178,10 +177,8 @@ function _getVisibleToolbarButtons() {
     const { definitions, defaultContext } = extension.module;
     definitions.forEach(definition => {
       const context = definition.context || defaultContext;
-
       if (this.props.activeContexts.includes(context)) {
         toolbarButtonDefinitions.push(definition);
-        //console.log(definition);
       }
     });
   });
