@@ -128,6 +128,18 @@ class StudyListWithData extends Component {
     this.searchForStudies(searchData);
   };
 
+  sleep = miliseconds => {
+   var currentTime = new Date().getTime();
+
+   while (currentTime + miliseconds >= new Date().getTime()) {
+   }
+  }
+
+  logout = () => {
+    this.props.history.push(`/auth/realms/ohif/protocol/openid-connect/logout?redirect_uri=`);
+    window.location.reload();
+  }
+
   render() {
     if (this.state.error) {
       return <div>Error: {JSON.stringify(this.state.error)}</div>;
@@ -137,7 +149,7 @@ class StudyListWithData extends Component {
 
     return (
       <>
-        <ConnectedHeader home={true} user={this.props.user} />
+        <ConnectedHeader home={true} logout={this.logout} user={this.props.user} />
         <button
           onClick={() => {
             this.props.history.push(`/viewer/NIFTI`);

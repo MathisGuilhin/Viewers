@@ -170,12 +170,16 @@ class Viewer extends Component {
     measurementApi.retrieveMeasurements(patientId, [currentTimepointId]);
   }
 
+  logout = () => {
+    window.location = ('http://127.0.0.1/auth/realms/ohif/protocol/openid-connect/logout?redirect_uri=');
+  }
+
   render() {
     return (
       <>
         <WhiteLabellingContext.Consumer>
           {whiteLabelling => (
-            <ConnectedHeader home={false}>
+            <ConnectedHeader home={false} logout={this.logout}>
               {whiteLabelling.logoComponent}
             </ConnectedHeader>
           )}

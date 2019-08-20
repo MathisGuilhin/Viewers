@@ -128,12 +128,23 @@ class ViewerNIFTI extends Component {
     }
   };
 
+  sleep = (miliseconds) => {
+    var currentTime = new Date().getTime();
+
+    while (currentTime + miliseconds >= new Date().getTime()) {
+    }
+  }
+
+  logout = () => {
+    window.location = ('http://127.0.0.1/auth/realms/ohif/protocol/openid-connect/logout?redirect_uri=');
+  }
+
   render() {
     return (
       <>
         <WhiteLabellingContext.Consumer>
           {whiteLabelling => (
-            <ConnectedHeader home={false}>
+            <ConnectedHeader home={false} logout={this.logout}>
               {whiteLabelling.logoComponent}
             </ConnectedHeader>
           )}

@@ -17,6 +17,7 @@ class Header extends Component {
     location: PropTypes.object.isRequired,
     children: PropTypes.node,
     t: PropTypes.func.isRequired,
+    logout: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
@@ -115,6 +116,7 @@ class Header extends Component {
           <span className="research-use">{t('INVESTIGATIONAL USE ONLY')}</span>
           <Dropdown title={t('Options')} list={this.options} align="right" />
           {/* <ConnectedUserPreferencesModal /> */}
+          <button onClick= {this.props.logout} > Log out </button>
         </div>
       </div>
     );
