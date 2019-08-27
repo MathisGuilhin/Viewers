@@ -72,6 +72,24 @@ const definitions = [
     commandOptions: { toolName: 'Length' },
   },
   {
+    id: 'FreehandMouse',
+    label: 'FreehandMouse',
+    icon: 'liver',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'FreehandMouse' },
+  },
+  {
+    id: 'Repulsor',
+    label: 'Repulsor',
+    icon: 'circle-o',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'Repulsor' },
+  },
+  {
     id: 'Angle',
     label: 'Angle',
     icon: 'angle-left',

@@ -353,6 +353,10 @@ async function resultDataToStudyMetadata(server, studyInstanceUid, resultData) {
       );
 
       const instanceSummary = {
+        imageNumber: DICOMWeb.getNumber(instance['00200013']),
+        acquisitionNumber: DICOMWeb.getNumber(instance['00200012']),
+        imagesInAcquisition: DICOMWeb.getString(instance['00201002']),
+        //
         imageType: DICOMWeb.getString(instance['00080008']),
         sopClassUid: DICOMWeb.getString(instance['00080016']),
         modality: DICOMWeb.getString(instance['00080060']),

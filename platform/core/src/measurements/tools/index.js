@@ -3,6 +3,7 @@ import { bidirectional } from './bidirectional';
 import { ellipticalRoi } from './ellipticalRoi';
 import { circleRoi } from './circleRoi';
 import { freehandMouse } from './freehandMouse';
+import { repulsor } from './repulsor';
 import { length } from './length';
 import { nonTarget } from './nonTarget';
 import { rectangleRoi } from './rectangleRoi';
@@ -17,6 +18,7 @@ export {
   ellipticalRoi,
   circleRoi,
   freehandMouse,
+  repulsor,
   length,
   nonTarget,
   rectangleRoi,

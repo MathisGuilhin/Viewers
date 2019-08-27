@@ -212,6 +212,10 @@ class Viewer extends Component {
     }
   }
 
+  logout = () => {
+    window.location = ('http://127.0.0.1/auth/realms/ohif/protocol/openid-connect/logout?redirect_uri=');
+  }
+
   render() {
     let VisiblePanelLeft, VisiblePanelRight;
     const panelExtensions = extensionManager.modules[MODULE_TYPES.PANEL];
@@ -233,7 +237,7 @@ class Viewer extends Component {
           {whiteLabelling => (
             <UserManagerContext.Consumer>
               {userManager => (
-                <ConnectedHeader home={false} userManager={userManager}>
+                <ConnectedHeader home={false} logout={this.logout} userManager={userManager}>
                   {whiteLabelling.logoComponent}
                 </ConnectedHeader>
               )}

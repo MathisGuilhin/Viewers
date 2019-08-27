@@ -1,0 +1,21 @@
+## Directories
+node_modules
+_book/
+
+## Files
+.npmrc
+
+## File Types
+.idea
+
+## Output
+coverage/
+docs/latest/api
+dist/
+junit.xml
+.DS_Store
+
+## Only track CI's lock
+yarn.lock
+
+Gemfile.lock

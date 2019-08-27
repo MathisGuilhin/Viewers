@@ -21,12 +21,20 @@ let defaultDropdownItems = [
     actionType: 'Delete',
     action: ({ nearbyToolData, eventData }) => {
       const element = eventData.element;
-
       cornerstoneTools.removeToolState(
         element,
         nearbyToolData.toolType,
         nearbyToolData.tool
       );
+      cornerstone.updateImage(element);
+    },
+  },
+  {
+    actionType: 'Interpolate',
+    action: ({ nearbyToolData, eventData }) => {
+      const element = eventData.element;
+      nearbyToolData.tool.interpolate = true;
+      nearbyToolData.tool.selectedData = true;
       cornerstone.updateImage(element);
     },
   },
@@ -124,6 +132,10 @@ function getDropdownItems(eventData, isTouchEvent = false, availableTools) {
 
       if (item.actionType === 'Delete') {
         item.text = 'Delete measurement';
+      }
+
+      if (item.actionType === 'Interpolate') {
+        item.text = ' Interpolate';
       }
 
       if (item.actionType === 'setLabel') {

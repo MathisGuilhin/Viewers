@@ -11,7 +11,6 @@ export default function getMeasurementLocationCallback(
   const doneCallback = updateTableWithNewMeasurementData;
 
   const ToolInstance = cornerstoneTools.getToolForElement(element, toolType);
-
   if (
     !ToolInstance ||
     !ToolInstance.configuration ||

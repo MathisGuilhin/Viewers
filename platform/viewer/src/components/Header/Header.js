@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 import { Dropdown } from '@ohif/ui';
 import OHIFLogo from '../OHIFLogo/OHIFLogo.js';
 import PropTypes from 'prop-types';
-import { AboutModal } from '@ohif/ui';
+// import { UserPreferencesModal } from 'react-viewerbase';
 import { hotkeysManager } from './../../App.js';
 import { withTranslation } from 'react-i18next';
 
@@ -17,7 +17,7 @@ class Header extends Component {
     location: PropTypes.object.isRequired,
     children: PropTypes.node,
     t: PropTypes.func.isRequired,
-    userManager: PropTypes.object
+    logout: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
@@ -41,7 +41,9 @@ class Header extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { isUserPreferencesOpen: false, isOpen: false };
+    this.state = { isUserPreferencesOpen: false };
+
+    // const onClick = this.toggleUserPreferences.bind(this);
 
     this.loadOptions();
   }
@@ -49,28 +51,29 @@ class Header extends Component {
   loadOptions() {
     const { t } = this.props;
     this.options = [
+      // {
+      //   title: t('Preferences'),
+      //   icon: { name: 'user' },
+      //   onClick: onClick,
+      // },
       {
         title: t('About'),
-        icon: { name: 'info' },
-        onClick: () => {
-          this.setState({
-            isOpen: true,
-          });
+        icon: {
+          name: 'info',
         },
+        link: 'http://ohif.org',
       },
     ];
 
-    if (this.props.user && this.props.userManager) {
-      this.options.push({
-        title: t('Logout'),
-          icon: { name: 'power-off' },
-          onClick: () => {
-            this.props.userManager.signoutRedirect();
-          },
-      });
-    }
-
     this.hotKeysData = hotkeysManager.hotkeyDefinitions;
+  }
+
+  toggleUserPreferences() {
+    const isOpen = this.state.isUserPreferencesOpen;
+
+    this.setState({
+      isUserPreferencesOpen: !isOpen,
+    });
   }
 
   onUserPreferencesSave({ windowLevelData, hotKeysData }) {
@@ -82,10 +85,6 @@ class Header extends Component {
 
   render() {
     const { t } = this.props;
-    const showStudyList =
-      window.config.showStudyList !== undefined
-        ? window.config.showStudyList
-        : true;
     return (
       <div className={`entry-header ${this.props.home ? 'header-big' : ''}`}>
         <div className="header-left-box">
@@ -100,7 +99,7 @@ class Header extends Component {
 
           {this.props.children}
 
-          {showStudyList && !this.props.home && (
+          {!this.props.home && (
             <Link
               className="header-btn header-studyListLinkSection"
               to={{
@@ -116,14 +115,8 @@ class Header extends Component {
         <div className="header-menu">
           <span className="research-use">{t('INVESTIGATIONAL USE ONLY')}</span>
           <Dropdown title={t('Options')} list={this.options} align="right" />
-          <AboutModal
-            {...this.state}
-            onCancel={() =>
-              this.setState({
-                isOpen: false,
-              })
-            }
-          />
+          {/* <ConnectedUserPreferencesModal /> */}
+          <button onClick= {this.props.logout} > Log out </button>
         </div>
       </div>
     );

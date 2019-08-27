@@ -29,7 +29,6 @@ function getToolLabellingFlowCallback(store) {
       if (response) {
         measurementData.response = response;
       }
-
       updateTableWithNewMeasurementData(measurementData);
     };
 
@@ -142,11 +141,9 @@ function getResetLabellingAndContextMenu(store) {
 export default function setupTools(store) {
   const toolLabellingFlowCallback = getToolLabellingFlowCallback(store);
   const availableTools = [
-    { name: 'Pan', mouseButtonMasks: [4] },
-    { name: 'Zoom', mouseButtonMasks: [2] },
+    { name: 'Pan', mouseButtonMasks: [1, 4] },
+    { name: 'Zoom', mouseButtonMasks: [1, 2] },
     { name: 'Wwwc', mouseButtonMasks: [1] },
-    { name: 'Magnify' },
-    { name: 'WwwcRegion' },
     {
       name: 'Bidirectional',
       props: {
@@ -186,6 +183,15 @@ export default function setupTools(store) {
       mouseButtonMasks: [1],
     },
     {
+      name: 'Repulsor',
+      props: {
+        configuration: {
+          getMeasurementLocationCallback: toolLabellingFlowCallback,
+        },
+      },
+      mouseButtonMasks: [1],
+    },
+    {
       name: 'EllipticalRoi',
       props: {
         configuration: {
@@ -212,20 +218,10 @@ export default function setupTools(store) {
       },
       mouseButtonMasks: [1],
     },
-    { name: 'DragProbe' },
     { name: 'PanMultiTouch' },
     { name: 'ZoomTouchPinch' },
     { name: 'StackScrollMouseWheel' },
     { name: 'StackScrollMultiTouch' },
-    { name: 'Eraser' },
-    {
-      name: 'ArrowAnnotate',
-      props: {
-        configuration: {
-          getMeasurementLocationCallback: toolLabellingFlowCallback,
-        },
-      },
-    },
   ];
 
   const onRightClick = getOnRightClickCallback(store);

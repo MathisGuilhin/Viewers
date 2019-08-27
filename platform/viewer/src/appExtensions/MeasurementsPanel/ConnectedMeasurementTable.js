@@ -140,7 +140,6 @@ function convertTimepointsToTableData(timepoints) {
   return [
     {
       label: 'Study date:',
-      key: 'StudyDate',
       date: moment(timepoints[0].latestDate).format('DD-MMM-YY'),
     },
   ];
@@ -149,6 +148,7 @@ function convertTimepointsToTableData(timepoints) {
 const mapStateToProps = state => {
   const { timepoints, measurements } = state.timepointManager;
   return {
+    freehandData: measurements.FreehandMouse,
     timepoints: convertTimepointsToTableData(timepoints),
     measurementCollection: convertMeasurementsToTableData(
       measurements,
@@ -292,6 +292,7 @@ const mapDispatchToProps = dispatch => {
 
 const mergeProps = (propsFromState, propsFromDispatch, ownProps) => {
   return {
+    freehandData: propsFromState.freehandData,
     timepoints: propsFromState.timepoints,
     measurementCollection: propsFromState.measurementCollection,
     selectedMeasurementNumber: ownProps.selectedMeasurementNumber,

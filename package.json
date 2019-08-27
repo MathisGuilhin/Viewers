@@ -29,7 +29,10 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.5.5",
-    "core-js": "^3.2.1"
+    "core-js": "^3.2.1",
+    "cornerstone-tools": "file:.yalc/cornerstone-tools",
+    "nifti-reader-js": "^0.5.4",
+    "file-saver": "^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",

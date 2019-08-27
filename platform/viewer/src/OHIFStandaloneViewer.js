@@ -12,6 +12,7 @@ import IHEInvokeImageDisplay from './routes/IHEInvokeImageDisplay.js';
 import ViewerRouting from './routes/ViewerRouting.js';
 import ViewerLocalFileData from './connectedComponents/ViewerLocalFileData.js';
 import StudyListRouting from './studylist/StudyListRouting.js';
+import ViewerNIFTI from './connectedComponents/ViewerNIFTI.js';
 import StandaloneRouting from './routes/StandaloneRouting.js';
 import CallbackPage from './routes/CallbackPage.js';
 import NotFound from './routes/NotFound.js';
@@ -124,6 +125,10 @@ class OHIFStandaloneViewer extends Component {
       {
         path: '/viewer',
         Component: StandaloneRouting,
+      },
+      {
+        path: '/viewer/NIFTI',
+        Component: ViewerNIFTI,
       },
       {
         path: '/viewer/:studyInstanceUids',

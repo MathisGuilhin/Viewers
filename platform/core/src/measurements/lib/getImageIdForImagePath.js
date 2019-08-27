@@ -6,6 +6,7 @@ export default function(imagePath, thumbnail = false) {
     seriesInstanceUid,
     sopInstanceUid,
     frameIndex,
+    numImages,
   ] = imagePath.split('_');
   const studyMetadata = studyMetadataManager.get(studyInstanceUid);
   const series = studyMetadata.getSeriesByUID(seriesInstanceUid);
