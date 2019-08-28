@@ -1,4 +1,4 @@
-import cornerstoneTools from 'cornerstone-tools';
+import cornerstoneTools from "cornerstone-tools";
 import log from '../../log';
 import getLabel from '../lib/getLabel';
 import getDescription from '../lib/getDescription';

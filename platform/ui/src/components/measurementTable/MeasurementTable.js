@@ -244,7 +244,6 @@ class MeasurementTable extends Component {
       enabledImageId.indexOf(config.url) + config.url.length
     );
     var splitImageId = enabledImageId.split('/');
-    console.log(splitImageId);
 
     const enabledStudyInstanceUID = splitImageId[2];
     const enabledSeriesInstanceUID = splitImageId[4];
