@@ -35,6 +35,7 @@ COPY package.json /usr/src/app/package.json
 COPY yarn.lock /usr/src/app/yarn.lock
 
 ADD . /usr/src/app/
+RUN yarn upgrade
 RUN yarn install
 RUN yarn run build:web
 
